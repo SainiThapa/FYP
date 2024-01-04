@@ -7,31 +7,38 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="{%static 'js/slider.js'%}"></script>
   <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>index</title>
+    <title>Homepage</title>
 </head>
 <body>
     <!-- HEADER NAVIGATION BAR  -->
-  <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" > 
+  <div class="card text-center ">
+        <div class="card-header ">
+          <ul class="nav nav-tabs card-header-tabs justify-content-end"> 
+            <li class="nav-item" style="margin-right:40%; font-family:'palatino linotype';">
+            <a class="nav-link" href="/" style="display:block; color:#000;">
+              <!-- <img src="{%static 'img/logo.png'%}" width="60%" alt=""> -->
+ <h5><i><strong>Lawyer Management System</strong></i>
+ </h5>       </a></li>
             <li class="nav-item">
-            <a class="nav-link disabled">Lawyer Recommendation System</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link {% if active == 'home' %}active{% endif %}" aria-current="true" href="/home">Home</a>
+              <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link  {% if active == 'help' %}active{% endif %}" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  {% if active == 'contact' %}active{% endif %}" aria-disabled="true" href="/contact">Contact Us</a>
+              <a class="nav-link  {% if active == 'contact' %}active{% endif %}" href="/contact">Contact Us</a>
             </li>
-            <li class="nav-item ml-auto">
-                <a class="nav-link  {% if active == 'log' %}active{% endif %}" aria-current="true" href="/log">Login/Sign Up</a>
+            <li class="nav-item" style="margin-right:10%;">
+              <a class="nav-link  {% if active == 'log' %}active{% endif %}" href="/log">Login/Sign Up</a>
+            </div>
               </li>
           </ul>
-        </div>
         <!-- <div class="card-body">
           <h5 class="card-title">This is the homepage</h5>
           <p class="card-text">Below exists the image we are trying to load</p>
@@ -92,7 +99,7 @@
                   <p>We provide the system to recommend you the best and most relevant lawyers and attorneys to you related to your specific information and reasoning.<br/></p>
                   <p class="o_default_snippet_text">Log in to know and find more about the services.<br/></p>
       <p><br/></p>
-                  <p><a href="#" class="oe_edited_link btn btn-secondary" data-bs-original-title="" title="" aria-describedby="popover928516">Login</a><br/></p>
+                  <p><a href="/log" class="oe_edited_link btn btn-secondary" data-bs-original-title="" title="" aria-describedby="popover928516">Login</a><br/></p>
               </div>
           </div>
       </div>
@@ -138,7 +145,7 @@
   <!-- Bootstrap JS and Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/K5V8e5W5gBOn//6uUvoys87hub4N2J" crossorigin="anonymous"></script>  
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/K5V8e5W5gBOn//6uUvoys87hub4N2J" crossorigin="anonymous"></script>   -->
   <script>window.jQuery || document.write('<script src="{% static "js/jquery-3.5.1.slim.min.js" %}"><\/script>')</script>
 </body>
 </html>
