@@ -15,7 +15,7 @@ def log(request):
     return render(request,"log.html",{'active': 'log'})
 
 def help(request):
-    return render(request,"help.html",{'active': 'help'})
+    return render(request,"help.html",{'active': 'about'})
 
 def homepage(request):
     return render(request, 'index.html', {'active': 'home'})
